@@ -26,23 +26,23 @@ This program fully implements a compiler: parsing/tokenizing input, building an 
 
 
 --Examples--  
-Sample input:
-def main
-    int sum;
-    int i;
-    sum = 0;
-    for (i = 1; i <= 10; i = i+1) do
-        sum = sum + i;
-    end;
-    print(sum);
-end
-
-Sample output:
-60
-
-
-
---How to Run--
+Sample input:  
+def main  
+    int sum;  
+    int i;  
+    sum = 0;  
+    for (i = 1; i <= 10; i = i+1) do  
+        sum = sum + i;  
+    end;  
+    print(sum);  
+end  
+  
+Sample output:  
+60  
+  
+  
+  
+--How to Run--  
 
 (1) from the stdin : "python compiler.py"  
 [will print ILOC code to console]  
