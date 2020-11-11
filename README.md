@@ -1,7 +1,4 @@
-Aarti Badami
-Final Project
-RUID #172003903
-NETID: asb243
+
 
 How to run test cases:
 
