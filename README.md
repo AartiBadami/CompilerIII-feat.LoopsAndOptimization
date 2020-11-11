@@ -2,10 +2,43 @@ This program fully implements a compiler: parsing/tokenizing input, building an 
   
   
 --Grammar--  
+< Program >   ::= < Main >  
+< Main >      ::= def main < VarDecls > < Stmts > end  
+< VarDecls >  ::= < VarDecl >; < VarDecls > | e  
+< VarDecl >   ::= < Type > < Id >  
+< Type >      ::= int | bool  
+< Stmts >     ::= < Stmt >; < Stmts > | < Stmt >;  
+< Stmt >      ::= < Assign > | < Print > | < While > | < If > | < For >  
+< Assign >    ::= < Id > = < Expr >  
+< Print >     ::= print (< Id >)  
+< While >     ::= while (< Expr >) do < Stmts > end  
+< If >        ::= if (< Expr >) do < Stmts> end  
+                | if (< Expr >) do < Stmts > else < Stmts > end  
+< For >       ::= for (< Stmt >; < Expr >; < Stmt >) do < Stmts > end  
+< Expr >      ::= < Expr > < BinOp > < Expr >  
+                | ! < Expr >  
+                | < Id >  
+                | < Const >  
+                | (< Expr >)  
+< BinOp >     ::= + | - | * | / | && | || | ^ | < | <= | == | != | >= | >  
+
+
 
 
 --Examples--  
+Sample input:
+def main
+    int sum;
+    int i;
+    sum = 0;
+    for (i = 1; i <= 10; i = i+1) do
+        sum = sum + i;
+    end;
+    print(sum);
+end
 
+Sample output:
+60
 
 
 
