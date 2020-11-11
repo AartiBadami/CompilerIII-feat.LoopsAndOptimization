@@ -1,0 +1,17 @@
+def main
+  int n;
+  int counter;
+  n = 0;
+  counter = 0;
+  print(n);
+  print(counter);
+  while (n < 5) do
+    n = n + 1;
+    while (counter < 5) do
+      counter = counter + 1;
+    end;
+  end;
+  print(n);
+  print(counter);
+
+end

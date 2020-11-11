@@ -1,0 +1,7 @@
+def main
+  int x;
+  int y;
+  y = 0;
+  x = ((4+5) - (1 * 0)) / 2;
+  print(x);
+end

@@ -1,0 +1,13 @@
+def main
+  int i;
+  i = 0;
+
+  while(i < 3) do
+    if (i == 2) do
+      i = 5;
+    else
+      i = i + 1;
+    end;
+    print(i);
+  end;
+end

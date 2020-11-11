@@ -1,0 +1,11 @@
+def main
+  int i;
+  i = 3;
+  print(i);
+  if (i < 2) do
+    i = 2;
+  else
+    i = 4;
+  end;
+  print(i);
+end

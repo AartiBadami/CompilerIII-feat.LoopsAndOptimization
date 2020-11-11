@@ -1,0 +1,7 @@
+def main
+  bool x;
+  bool y;
+  y = false;
+  x = ((true && true) || (y ^ false));
+  print(x);
+end

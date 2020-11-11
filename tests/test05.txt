@@ -1,0 +1,19 @@
+def main
+  int i;
+  int j;
+  bool b;
+  j = 0;
+  b = true;
+
+  while (b == true) do
+    for(i = 0; i < 4; i = i + 1) do
+      j = j + 1;
+      if (j == 4) do
+        b = false;
+      else
+        b = true;
+      end;
+    end;
+  end;
+  print(j);
+end
